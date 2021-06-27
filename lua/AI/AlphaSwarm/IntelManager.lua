@@ -3,6 +3,14 @@ local ScenarioUtils = import('/lua/sim/ScenarioUtilities.lua')
 
 R2 = math.sqrt(2)
 
+-- I have to kinda of destory this
+-- This is basically recreating the IMAP which is extremely unneeded 
+-- Farthermore (I respect the TODOs) but The Threat System is extremely simple and abusable
+-- Not sure if Softles plans to update this more and turn into a more flexible system
+-- Since I see no TODOs on the GetLandThreat Function
+-- Interesting overrall but In reality just the IMAP but less functional overrall
+-- Farther More this is just overrall a goofy system imo
+
 IntelManager = Class({
     Initialise = function(self,brain)
         self.brain = brain

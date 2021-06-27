@@ -606,6 +606,8 @@ AirProduction = Class({
         self.brain.base:AddUpgradeJob(self.t3supportfacJob)
     end,
 
+    -- Good Teaching Lessons when doing the Air Builds for the Production Manager.
+    -- Interesting Flexibly and farthermore I will admit not as straight forward but thats just more per say learning curve.
     -- Called every X ticks, does the job management.  Passed the mass assigned this funding round.
     ManageJobs = function(self,mass)
         local massRemaining = mass
@@ -744,8 +746,8 @@ AirProduction = Class({
         massRemaining = math.max(0,massRemaining - t1Spend)
 
         -- Upgrade jobs to high/critical priority if there's an urgent need for them (4)
-        -- T1 tanks early game
-        -- AA if being bombed
+        -- T1 Inties/Bombers early game
+        -- More Inties if being bombed
         if (self.brain.monitor.units.air.count.total < 30) and (((self.brain.monitor.units.engies.t1 - 1) * 2) > self.brain.monitor.units.air.count.total) then
             self.intieJob.priority = HIGH
             self.bomberJob.priority = HIGH

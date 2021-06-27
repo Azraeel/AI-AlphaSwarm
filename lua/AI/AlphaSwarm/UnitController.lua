@@ -1,5 +1,12 @@
 local PROFILER = import('/mods/AlphaSwarm/lua/AI/AlphaSwarm/Profiler.lua').GetProfiler()
 
+-- Why the decision to completely remove the platoon system/manager
+-- this is what buffles me because the platoon system has more flexibility then what you have here currently
+-- Yes I know (TODOs) obviously this is rushed but I am judging from what I see now.
+-- In ways this is a faster and more efficient way of gettings units on the fields 
+-- and in Theory allowing quicker reaction but I'd say RNG does this extremely well with the Platoon Manager
+-- right now with this system we get a lot of 1,2,3,4,5,6 unit platoons that dont do much when facing largers forces.
+
 UnitController = Class({
     Initialise = function(self,brain)
         self.brain = brain

@@ -13,6 +13,8 @@ end
 function FindLocation(aiBrain, baseManager, intelManager, blueprint, location, radius, locationBias)
     -- Fuck having this as a dependency: aiBrain:FindPlaceToBuild
     -- It is so miserably complex to call that I'm going to roll my own version right here. Fight me.
+    -- I mean why reinvent the wheel
+    -- Confusion
 
     local startTime = PROFILER:Now()
 
@@ -162,6 +164,13 @@ function EngineerAssist(engie,target)
         engie.CustomData.assistComplete = nil
     end
 end
+
+-- Hammering.
+-- Sledgehammering.
+-- You can queue stuff although you might want to cancel so fair
+-- But You can use templates to queue stuff 
+-- Although that functionality doesnt exist anymore
+-- Overrall reinventing the wheel
 
 function FactoryBuildUnit(fac,unit)
     IssueClearCommands({fac})
