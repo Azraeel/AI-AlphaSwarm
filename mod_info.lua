@@ -1,0 +1,17 @@
+name = "AI-AlphaSwarm"
+uid = "28F4B5A9EDE30F06-v:0.0.1"
+version = 1
+copyright = "Softles (OG) Azraeel (Using Framework)"
+description = "Rewrite of AI-Swarm using Softles New AI Framework."
+author = "Azraeel"
+url = "https://github.com/HardlySoftly/AlphaSwarm"
+icon = "/mods/AlphaSwarm/tqI_czN8_400x400.jpg"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = false
+requires = { }
+requiresNames = { }
+conflicts = { }
+before = { }
+after = { }
